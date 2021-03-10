@@ -1,4 +1,4 @@
-# Filtrado laplaciano
+# Small laplacian
 def function_getMontage(montage):
     #
     ## Calculates spatial filter matrix for Laplacian derivations.
