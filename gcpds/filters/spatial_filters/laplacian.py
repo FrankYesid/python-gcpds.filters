@@ -42,7 +42,6 @@ def function_getMontage(montage):
     ## Luisa F. Velasquez M.
     ## Version 2020
     import numpy as np
-    # import math
     montage = '22ch'
     if isinstance(montage,str):  # Predefined layouts
         if montage == '16ch':
