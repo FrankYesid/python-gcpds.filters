@@ -1,6 +1,5 @@
-# Small laplacian
 def function_getMontage(montage):
-    #
+    ## Small laplacian
     ## Calculates spatial filter matrix for Laplacian derivations.
     ##
     ## Returns a spatial filter matrix used to calculate Laplacian derivations as
@@ -36,13 +35,13 @@ def function_getMontage(montage):
     ##
     ## Copyright by Clemens Brunner, Robert Leeb, Alois Schlögl
     ## Version matlab Toolbox Biosig
-    ##
+    ## ------------------------------------------------------------------------
     ## Version python
-    ## Frank Y. Zapata C.
-    ## Luisa F. Velasquez M.
+    ## Frank Y. Zapata C., Luisa F. Velasquez M.
     ## Version 2020
-    import numpy as np
-    montage = '22ch'
+    ## ------------------------------------------------------------------------
+    # import numpy as np
+    # montage = '22ch'
     if isinstance(montage,str):  # Predefined layouts
         if montage == '16ch':
             temp = [[0,0,1,0,0],
@@ -96,7 +95,7 @@ def function_getMontage(montage):
                 [0,0,1,1,1,1,1,1,1,0,0],
                 [0,0,0,1,1,1,1,1,0,0,0],
                 [0,0,0,0,1,1,1,0,0,0,0]]
-        if montage == '64ch':  # order of channels of database 01 GigaScience
+        if montage == '64ch':  # order of channels of database GIGA_MI_ME
             temp = [[0,0,0,0,1,33,34,0,0,0,0],
                 [0,0,0,2,3,37,36,35,0,0,0],
                 [0,7,6,5,4,38,39,40,41,42,0],
